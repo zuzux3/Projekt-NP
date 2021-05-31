@@ -2,6 +2,7 @@ def func(x, y):
     sum = x + y
     return sum
 
+
 def Euler(x0, y0, xn, n):
     a = (xn - x0) / n
 
@@ -14,16 +15,17 @@ def Euler(x0, y0, xn, n):
     print(print_str3)
     print(print_str2)
 
-    for i in range (n):
+    for i in range(n):
         nachylenie = func(x0, y0)
         yn = y0 + a * nachylenie
-        print('%.2f\t %.2f\t %0.2f\t %.2f'% (x0, y0, nachylenie, yn))
+        print('%.2f\t %.2f\t %0.2f\t %.2f' % (x0, y0, nachylenie, yn))
         print(print_str2)
 
         y0 = yn
         x0 = x0 + a
 
-    print('\nW x = %.2f, y = %.2f'% (xn, yn))
+    print('\nW x = %.2f, y = %.2f' % (xn, yn))
+
 
 def Euler_Exp():
     enter_str1 = 'Wprowadz dane do obliczenia:\n'
@@ -31,13 +33,13 @@ def Euler_Exp():
     enter_str3 = 'Wprowadz liczbe krokow:\n'
 
     print(enter_str1)
-    x0 = float ( input('Podaj x0: '))
-    y0 = float ( input('Podaj y0: '))
+    x0 = float(input('Podaj x0: '))
+    y0 = float(input('Podaj y0: '))
 
     print(enter_str2)
-    xn = float ( input('Podaj xn: '))
+    xn = float(input('Podaj xn: '))
 
     print(enter_str3)
-    kroki = int ( input('Podaj liczbe krokow: '))
+    kroki = int(input('Podaj liczbe krokow: '))
 
     Euler(x0, y0, xn, kroki)
