@@ -1,11 +1,12 @@
 def funkcja(x):
     return float(x) * float(x) + float(x) + 3
 
+
 def trapez():
-    n = float (input('Podaj ilosc trapezow: '))
-    xp = input('Podaj poczatek przedzialu calkowania:  ')  # początek przeziału całkowania
-    xk = input('Podaj koniec przedzialu calkowania:  ')    # koniec przedziału całkowania
-    dx = (float(xk) - float(xp)) / n                      # odległość między punktami podziałowymi
+    n = float(input('Podaj ilosc trapezow: '))
+    xp = input('Podaj poczatek przedzialu calkowania:  ')
+    xk = input('Podaj koniec przedzialu calkowania:  ')
+    dx = (float(xk) - float(xp)) / n
     print('Odległość między punktami podziałowymi: ' + str(dx))
     i = 1
     s = 0
